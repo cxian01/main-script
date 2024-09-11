@@ -1,8 +1,8 @@
 getgenv().Config = {
     ["Webhook"] = "https://discord.com/api/webhooks/1283410350653444117/Op5uk-drCvwEIxqaP3w7BefWorn2vHmjP1GPu39zakR6r1Kud48f_Es8P3WE8Rq1jCgK",
     ["EquipEnchants"] = {"Coins", "Strong Pets", "Treasure Hunter", "Tap Power", "Diamonds"},
-    ["KickWhenReachGoal"] = {["Rank"] = 20, ["Rebirth"] = 9, ["Area"] = 223},
-    ["StopAt"] = {["Rank"] = 11, ["Area"] = 223},
+    ["KickWhenReachGoal"] = {["Rank"] = 30, ["Rebirth"] = 9, ["Area"] = 223},
+    ["StopAt"] = {["Rank"] = 30, ["Area"] = 223},
     ["AutoBalloon"] = false,
     ["FPSBooster"] = true,
 }
