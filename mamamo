@@ -1,26 +1,9 @@
-getgenv().KiTTYWARE_ColorWar = {
-    Farm_Zones = true,
-    Farming_Misc = {
-        Pets_Per_Breakable = 1,
-        Event_Specific = {
-            Color_Gifts = {Enabled = true, Minimum_Buckets = 75},
-            Clan_Points = {Enabled = false, Minimum_Buckets = 50},
-            Stay_Teams = {Enabled = false, Only_Winning = true},
-            Graffiti_Gifts = {Enabled = false},
-        },
-    },
-    Hatch_Eggs = true,
-    Hatching_Misc = {
-        discord_UserID = "786492080746397708",
-        hugeNotif_Webhook = "https://discord.com/api/webhooks/1281391335374458882/MGiLxUT5yaRjlsts84cbjwgZDqGXNpr70n1lTl-BdnIUp1V8nrlELA7_CUNiR1zmIhuW.",
-        hugeNotif_Enabled = true,
-        autoMail_User = "Enter your Username.",
-        autoMail_Enabled = false,
-    },
-    Farm_Minigame = true,
-
-    StatsGui = true,
-    Fps_Boost1 = false,
-    Fps_Boost2 = false,
+getgenv().Config = {
+    ["Webhook"] = "https://discord.com/api/webhooks/1283410350653444117/Op5uk-drCvwEIxqaP3w7BefWorn2vHmjP1GPu39zakR6r1Kud48f_Es8P3WE8Rq1jCgK",
+    ["EquipEnchants"] = {"Coins", "Strong Pets", "Treasure Hunter", "Tap Power", "Diamonds"},
+    ["KickWhenReachGoal"] = {["Rank"] = 20, ["Rebirth"] = 9, ["Area"] = 223},
+    ["StopAt"] = {["Rank"] = 11, ["Area"] = 223},
+    ["AutoBalloon"] = false,
+    ["FPSBooster"] = true,
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/38e4778402a1d51414b40ab60274c5ed.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c95c638eb796e82bd68ba89a5abdd293.lua"))()
