@@ -1,26 +1,21 @@
-getgenv().KiTTYWARE_ColorWar = {
-    Farm_Zones = true,
-    Farming_Misc = {
-        Pets_Per_Breakable = 1,
-        Auto_Pickups = true,
-        Inf_Pet_Speed = true,
+getgenv().CFG = {
+    ["Mail & Shit"] = {
+        ["Show User"] = true, -- Show Username in webhook (frogot to add)
+        ["Webhook URL"] = "https://discord.com/api/webhooks/1281391335374458882/MGiLxUT5yaRjlsts84cbjwgZDqGXNpr70n1lTl-BdnIUp1V8nrlELA7_CUNiR1zmIhuW",    -- Webhook URL
+        ["Discord ID"] = "786492080746397708", -- Discord id to ping
 
-        Event_Specific = {
-            Color_Gifts = {Enabled = true, Minimum_Buckets = 75},
-            Clan_Points = {Enabled = false, Minimum_Buckets = 50},
-            Stay_Teams = {Enabled = false, Only_Winning = true},
-        },
+
+        ["Send Mail"] = true,   -- Toggle Send Mail
+        ["Send Existing"] = true, -- Send Existing Huges
+        ["User"] = "im_xian001",          -- Mail User
     },
-    Hatch_Eggs = true,
-    Hatching_Misc = {
-        discord_UserID = "786492080746397708",
-        hugeNotif_Webhook = "https://discord.com/api/webhooks/1281391335374458882/MGiLxUT5yaRjlsts84cbjwgZDqGXNpr70n1lTl-BdnIUp1V8nrlELA7_CUNiR1zmIhuW",
-        hugeNotif_Enabled = true,
-        autoMail_User = "im_xian001",
-        autoMail_Enabled = true,
+    ["Optamize+"] = {-- New Optamizer
+        ["Enabled"] = true,
+        ["CoreGui"] = true, -- Turrning off = More Fps
+        ["Show Tap Gui"] = false,
     },
-    StatsGui = true,
-    Fps_Boost1 = true, -- world stuff invisible
-    Fps_Boost2 = false, -- disable localscript 
+    ["Stats GUI"] = true,       -- Stats GUI Toggle
+    ["Auto Buy Rod"] = true,    -- Automatically buy fishing rods
+    ["Hidden Spot"] = true,     -- Option for Hidden Spot
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/38e4778402a1d51414b40ab60274c5ed.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5b63722c09f18a1622a71d0b8aa68c68.lua"))()
