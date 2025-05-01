@@ -1,21 +1,15 @@
-getgenv().CFG = {
-    ["Mail & Shit"] = {
-        ["Show User"] = true, -- Show Username in webhook (frogot to add)
-        ["Webhook URL"] = "https://discord.com/api/webhooks/1281391335374458882/MGiLxUT5yaRjlsts84cbjwgZDqGXNpr70n1lTl-BdnIUp1V8nrlELA7_CUNiR1zmIhuW",    -- Webhook URL
-        ["Discord ID"] = "786492080746397708", -- Discord id to ping
-
-
-        ["Send Mail"] = true,   -- Toggle Send Mail
-        ["Send Existing"] = true, -- Send Existing Huges
-        ["User"] = "im_xian001",          -- Mail User
+getgenv().Config = {
+    ["Hatching"] = {
+        ["Rifts"] = {
+            ["Eggs"] = {"Silly Egg", "Throwback Egg"}
+        },
+        ["Egg"] = "100M Egg"
     },
-    ["Optamize+"] = {-- New Optamizer
-        ["Enabled"] = true,
-        ["CoreGui"] = true, -- Turrning off = More Fps
-        ["Show Tap Gui"] = false,
+    ["Webhook"] = {
+        ["MinDifficulty"] = "500k",
+        ["UserID"] = "786492080746397708",
+        ["URL"] = "https://discord.com/api/webhooks/1299279860832927765/lutLqsNrLm8YREMDOMdQabPYUoWOQGZn_yJooDgkH0A32adMd0SxwRlChZN4bXu1AmSU",
     },
-    ["Stats GUI"] = true,       -- Stats GUI Toggle
-    ["Auto Buy Rod"] = true,    -- Automatically buy fishing rods
-    ["Hidden Spot"] = true,     -- Option for Hidden Spot
+    ["AutoEnchant"] = true -- // Enchant Team Up on all Equipped Pets
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5b63722c09f18a1622a71d0b8aa68c68.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6a28683e5e681161a5074613f6daf64c.lua"))()
