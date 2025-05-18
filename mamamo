@@ -1,19 +1,39 @@
 getgenv().Config = {
-    ["Hatching"] = {
-        ["Rifts"] = {
-            ["Eggs"] = {"Silly Egg", "Nightmare Egg"}
-        },
-        ["Egg"] = "100M Egg"
+    ["Time To Sell"] = 5, -- Seconds
+    ["Seed"] = {
+        ["Strawberry"] = 44,
+        ["Corn"] = 44,
+        ["Coconut"] = 44,
+        ["Cacao"] = 44,
+        ["Pumpkin"] = 44,
+        ["Mango"] = 44,
+        ["Banana"] = 44,
+        ["Grape"] = 44,
+        ["Blueberry"] = 44,
+        ["Tomato"] = 44,
+        ["Orange Tulip"] = 44,
+        ["Watermelon"] = 44,
+        ["Dragon Fruit"] = 44,
+        ["Cactus"] = 44,
+        ["Daffodil"] = 44,
+        ["Pepper"] = 44,
+        ["Bamboo"] = 44
+
     },
-    ["Webhook"] = {
-        ["MinDifficulty"] = "800k",
-        ["UserID"] = "786492080746397708",
-        ["URL"] = "https://discord.com/api/webhooks/1299279860832927765/lutLqsNrLm8YREMDOMdQabPYUoWOQGZn_yJooDgkH0A32adMd0SxwRlChZN4bXu1AmSU",
+    ["FPS"] = 30,
+    ["Buy Egg"] = true,
+    ["Egg"] = {
+        ["Common Egg"] = true,
+        ["Rare Egg"] = true,
+        ["Mythical Egg"] = false,
+        ["Legendary Egg"] = false,
+        ["Bug Egg"] = true
     },
-    ["AutoTrade"] = {
-        ["Usernames"] = {"alt_xian001"}, -- Receiver Accounts
-        ["URL"] = ""
-    },
-    ["AutoEnchant"] = true -- // Enchant Team Up on all Equipped Pets
+    ["PetNeedSend"] = "Dragonfly",
+    ["Url"] = "",
+    ["Boost FPS"] = false,
+    ["Black Screen"] = false,
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6a28683e5e681161a5074613f6daf64c.lua"))()
+
+script_key="fmkSdKCmyilrgJZZxoPFbsgTfCUCZqyn";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/bb20b8149c1d2b8c630319a520bfa3fc.lua"))()
