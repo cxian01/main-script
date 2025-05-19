@@ -1,5 +1,6 @@
+script_key="uzXPAUHnEFXuoOFcqeoycDJKeHQeSKnf";
 getgenv().Config = {
-    ["Time To Sell"] = 5, -- Seconds
+    ["Time To Sell"] = 35, -- Seconds
     ["Seed"] = {
         ["Strawberry"] = 44,
         ["Corn"] = 44,
@@ -8,9 +9,6 @@ getgenv().Config = {
         ["Pumpkin"] = 44,
         ["Mango"] = 44,
         ["Banana"] = 44,
-        ["Grape"] = 44,
-        ["Blueberry"] = 44,
-        ["Tomato"] = 44,
         ["Orange Tulip"] = 44,
         ["Watermelon"] = 44,
         ["Dragon Fruit"] = 44,
@@ -18,22 +16,44 @@ getgenv().Config = {
         ["Daffodil"] = 44,
         ["Pepper"] = 44,
         ["Bamboo"] = 44
-
     },
     ["FPS"] = 30,
     ["Buy Egg"] = true,
     ["Egg"] = {
-        ["Common Egg"] = true,
-        ["Rare Egg"] = true,
+        ["Common Egg"] = false,
+        ["Rare Egg"] = false,
         ["Mythical Egg"] = false,
         ["Legendary Egg"] = false,
         ["Bug Egg"] = true
     },
+    ["ItemBlood"] = {
+        ["Blood Banana"] = true,
+        ["Blood Owl"] = true,
+        ["Night Seed Pack"] = true,
+        ["Moon Melon"] = false,
+        ["Mysterious Crate"] = false,
+        ["Blood Kiwi"] = false,
+        ["Night Egg"] = false,
+        ["Star Caller"] = false,
+        ["Blood Hedgehog"] = false
+    },
+    ["Item Special Buy"] = {
+        ["Candy Blossom"] = true,
+        ["Chocolate Sprinkler"] = true,
+        ["Candy Sunflower"] = true,
+        ["Easter Egg"] = true,
+        ["Red Lollipop"] = true,
+        ["Chocolate Carrot"] = true
+    },
+    ["Sprinkler"] = {
+        ["Basic Sprinkler"] = true,
+        ["Advanced Sprinkler"] = true,
+        ["Master Sprinkler"] = true,
+        ["Godly Sprinkler"] = true
+    },
     ["PetNeedSend"] = "Dragonfly",
-    ["Url"] = "",
+    ["Url"] = "https://discord.com/api/webhooks/1373477976775069809/opfLZLUsrjrjYp3bq-Urx37wszFZoXg32jNHPwElbNnWhMYSLHiGh909yGF7csg-nCRj", -- URL WEBHOOK
     ["Boost FPS"] = false,
-    ["Black Screen"] = false,
+    ["Black Screen"] = false
 }
-
-script_key="fmkSdKCmyilrgJZZxoPFbsgTfCUCZqyn";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/bb20b8149c1d2b8c630319a520bfa3fc.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
