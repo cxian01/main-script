@@ -50,8 +50,8 @@ getgenv().Config = {
     },
     ["PetNeedSend"] = "Dragonfly",
     ["Url"] = "https://discord.com/api/webhooks/1373477976775069809/opfLZLUsrjrjYp3bq-Urx37wszFZoXg32jNHPwElbNnWhMYSLHiGh909yGF7csg-nCRj", -- URL WEBHOOK
-    ["Boost FPS"] = true,
-    ["Black Screen"] = true
+    ["Boost FPS"] = false,
+    ["Black Screen"] = false,
 }
 script_key="YzzMGroYGjWoblzVwoNPRQLqWQKYRDhF";
 
