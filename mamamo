@@ -1,14 +1,11 @@
-script_key="uzXPAUHnEFXuoOFcqeoycDJKeHQeSKnf";
 getgenv().Config = {
     ["Time To Sell"] = 35, -- Seconds
     ["Seed"] = {
         ["Strawberry"] = 44,
         ["Corn"] = 44,
-        ["Coconut"] = 44,
         ["Cacao"] = 44,
         ["Pumpkin"] = 44,
         ["Mango"] = 44,
-        ["Banana"] = 44,
         ["Orange Tulip"] = 44,
         ["Watermelon"] = 44,
         ["Dragon Fruit"] = 44,
@@ -17,46 +14,57 @@ getgenv().Config = {
         ["Pepper"] = 44,
         ["Bamboo"] = 44
     },
-    ["FPS"] = 30,
+    ["FPS"] = 10,
     ["Buy Egg"] = true,
     ["Egg"] = {
         ["Common Egg"] = false,
         ["Rare Egg"] = false,
-        ["Mythical Egg"] = false,
+        ["Mythical Egg"] = true,
         ["Legendary Egg"] = false,
         ["Bug Egg"] = true
     },
     ["ItemBlood"] = {
-        ["Blood Banana"] = true,
-        ["Blood Owl"] = true,
+        ["Blood Banana"] = false,
+        ["Blood Owl"] = false,
         ["Night Seed Pack"] = true,
-        ["Moon Melon"] = false,
-        ["Mysterious Crate"] = false,
+        ["Moon Melon"] = true,
+        ["Mysterious Crate"] = true,
         ["Blood Kiwi"] = false,
-        ["Night Egg"] = false,
+        ["Night Egg"] = true,
         ["Star Caller"] = false,
         ["Blood Hedgehog"] = false
     },
     ["Item Special Buy"] = {
         ["Candy Blossom"] = true,
         ["Chocolate Sprinkler"] = true,
-        ["Candy Sunflower"] = true,
-        ["Easter Egg"] = true,
-        ["Red Lollipop"] = true,
-        ["Chocolate Carrot"] = true
+        ["Candy Sunflower"] = false,
+        ["Easter Egg"] = false,
+        ["Red Lollipop"] = false,
+        ["Chocolate Carrot"] = false
     },
     ["Hop Old Server"] = true,
-    ["Delay Hop"] = 10,
+    ["Delay Hop"] = 5,
     ["Sprinkler"] = {
-        ["Basic Sprinkler"] = true,
-        ["Advanced Sprinkler"] = true,
+        ["Basic Sprinkler"] = false,
+        ["Advanced Sprinkler"] = false,
         ["Master Sprinkler"] = true,
         ["Godly Sprinkler"] = true
     },
-    ["PetNeedSend"] = "Dragonfly",
-    ["Url"] = "https://discord.com/api/webhooks/1373477976775069809/opfLZLUsrjrjYp3bq-Urx37wszFZoXg32jNHPwElbNnWhMYSLHiGh909yGF7csg-nCRj", -- URL WEBHOOK
+    ["Plant Candy"] = true,
+    ["PetNeedSend"] = {"Dragonfly", "Night Owl", "Raccoon"},
+    ["Destroy Mode"] = {
+        ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
+        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Tomato", "Orange Tulip"}
+    },
+    ["Url"] = "https://discord.com/api/webhooks/1373477976775069809/opfLZLUsrjrjYp3bq-Urx37wszFZoXg32jNHPwElbNnWhMYSLHiGh909yGF7csg-nCRj",
     ["Boost FPS"] = false,
-    ["Black Screen"] = false,
+    ["Black Screen"] = false
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
+script_key="YzzMGroYGjWoblzVwoNPRQLqWQKYRDhF";
+
+repeat
+    wait()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
+    task.wait(10)
+until getgenv().Loaded
