@@ -1,62 +1,12 @@
 getgenv().Config = {
-    ["Time To Sell"] = 35, -- Seconds
-    ["Seed"] = {
-        ["Cacao"] = 44,
-        ["Pumpkin"] = 44,
-        ["Mango"] = 44,
-        ["Orange Tulip"] = 44,
-        ["Watermelon"] = 44,
-        ["Dragon Fruit"] = 44,
-        ["Cactus"] = 44,
-        ["Daffodil"] = 44,
-        ["Pepper"] = 44,
-        ["Bamboo"] = 44
-    },
-    ["FPS"] = 10,
-    ["Buy Egg"] = true,
-    ["Egg"] = {
-        ["Common Egg"] = false,
-        ["Rare Egg"] = false,
-        ["Mythical Egg"] = false,
-        ["Legendary Egg"] = false,
-        ["Bug Egg"] = true
-    },
-    ["ItemBlood"] = {
-        ["Blood Banana"] = false,
-        ["Blood Owl"] = false,
-        ["Night Seed Pack"] = false,
-        ["Moon Melon"] = false,
-        ["Mysterious Crate"] = false,
-        ["Blood Kiwi"] = false,
-        ["Night Egg"] = false,
-        ["Star Caller"] = false,
-        ["Blood Hedgehog"] = false
-    },
-    ["Item Special Buy"] = {
-        ["Candy Blossom"] = true,
-        ["Chocolate Sprinkler"] = false,
-        ["Candy Sunflower"] = false,
-        ["Easter Egg"] = false,
-        ["Red Lollipop"] = false,
-        ["Chocolate Carrot"] = false
-    },
-    ["Hop Old Server"] = true,
-    ["Delay Hop"] = 5,
-    ["Sprinkler"] = {
-        ["Basic Sprinkler"] = false,
-        ["Advanced Sprinkler"] = false,
-        ["Master Sprinkler"] = false,
-        ["Godly Sprinkler"] = false
-    },
-    ["PetNeedSend"] = "Dragonfly",
-    ["Url"] = "https://discord.com/api/webhooks/1373477976775069809/opfLZLUsrjrjYp3bq-Urx37wszFZoXg32jNHPwElbNnWhMYSLHiGh909yGF7csg-nCRj", -- URL WEBHOOK
-    ["Boost FPS"] = false,
-    ["Black Screen"] = false,
+    ["Fps"] = 5,
+    ["Black Screen"] = true,
+    ["Boost FPS"] = true
 }
 script_key="YzzMGroYGjWoblzVwoNPRQLqWQKYRDhF";
 
 repeat
     wait()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1d92451f927cd5998d2fba7dab59f46f.lua"))()
     task.wait(10)
 until getgenv().Loaded
