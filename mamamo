@@ -1,8 +1,6 @@
 getgenv().Config = {
     ["Time To Sell"] = 35, -- Seconds
     ["Seed"] = {
-        ["Strawberry"] = 44,
-        ["Corn"] = 44,
         ["Cacao"] = 44,
         ["Pumpkin"] = 44,
         ["Mango"] = 44,
@@ -19,24 +17,24 @@ getgenv().Config = {
     ["Egg"] = {
         ["Common Egg"] = false,
         ["Rare Egg"] = false,
-        ["Mythical Egg"] = true,
+        ["Mythical Egg"] = false,
         ["Legendary Egg"] = false,
         ["Bug Egg"] = true
     },
     ["ItemBlood"] = {
         ["Blood Banana"] = false,
         ["Blood Owl"] = false,
-        ["Night Seed Pack"] = true,
-        ["Moon Melon"] = true,
-        ["Mysterious Crate"] = true,
+        ["Night Seed Pack"] = false,
+        ["Moon Melon"] = false,
+        ["Mysterious Crate"] = false,
         ["Blood Kiwi"] = false,
-        ["Night Egg"] = true,
+        ["Night Egg"] = false,
         ["Star Caller"] = false,
         ["Blood Hedgehog"] = false
     },
     ["Item Special Buy"] = {
         ["Candy Blossom"] = true,
-        ["Chocolate Sprinkler"] = true,
+        ["Chocolate Sprinkler"] = false,
         ["Candy Sunflower"] = false,
         ["Easter Egg"] = false,
         ["Red Lollipop"] = false,
@@ -47,20 +45,14 @@ getgenv().Config = {
     ["Sprinkler"] = {
         ["Basic Sprinkler"] = false,
         ["Advanced Sprinkler"] = false,
-        ["Master Sprinkler"] = true,
-        ["Godly Sprinkler"] = true
+        ["Master Sprinkler"] = false,
+        ["Godly Sprinkler"] = false
     },
-    ["Plant Candy"] = true,
-    ["PetNeedSend"] = {"Dragonfly", "Night Owl", "Raccoon"},
-    ["Destroy Mode"] = {
-        ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
-        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Tomato", "Orange Tulip"}
-    },
-    ["Url"] = "https://discord.com/api/webhooks/1373477976775069809/opfLZLUsrjrjYp3bq-Urx37wszFZoXg32jNHPwElbNnWhMYSLHiGh909yGF7csg-nCRj",
-    ["Boost FPS"] = false,
-    ["Black Screen"] = false
+    ["PetNeedSend"] = "Dragonfly",
+    ["Url"] = "https://discord.com/api/webhooks/1373477976775069809/opfLZLUsrjrjYp3bq-Urx37wszFZoXg32jNHPwElbNnWhMYSLHiGh909yGF7csg-nCRj", -- URL WEBHOOK
+    ["Boost FPS"] = true,
+    ["Black Screen"] = true
 }
-
 script_key="YzzMGroYGjWoblzVwoNPRQLqWQKYRDhF";
 
 repeat
