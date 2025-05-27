@@ -63,7 +63,7 @@ getgenv().Config = {
     },
     ["Url"] = "https://discord.com/api/webhooks/1299279860832927765/lutLqsNrLm8YREMDOMdQabPYUoWOQGZn_yJooDgkH0A32adMd0SxwRlChZN4bXu1AmSU", -- Webhook 
     ["Boost FPS"] = true,
-    ["Black Screen"] = false,
+    ["Black Screen"] = true,
     ["Note"] = "GAE ASS",
     ["Pet Mode"] = {
         ["Sell Pet"] = true,
