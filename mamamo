@@ -1,12 +1,94 @@
-getgenv().Config = {
-    ["Fps"] = 5,
-    ["Black Screen"] = true,
-    ["Boost FPS"] = true
-}
 script_key="YzzMGroYGjWoblzVwoNPRQLqWQKYRDhF";
-
+getgenv().Config = {
+    ["Time To Sell"] = 35, -- Seconds
+    ["Seed"] = {
+        ["Strawberry"] = 44,
+        ["Corn"] = 44,
+        ["Coconut"] = 44,
+        ["Apple"] = 44,
+        ["Watermelon"] = 44,
+        ["Mushroom"] = 44,
+        ["Pumpkin"] = 44,
+        ["Pepper"] = 44,
+        ["Cacao"] = 44,
+        ["Banana"] = 44,
+        ["Dragon Fruit"] = 44,
+        ["Mango"] = 44,
+        ["Cactus"] = 44,
+        ["Beanstalk"] = 44,
+        ["Grape"] = 44,
+        ["Bamboo"] = 44
+    },
+    ["FPS"] = 3,
+    ["Buy Egg"] = true,
+    ["Egg"] = {
+        ["Common Egg"] = false,
+        ["Uncommon Egg"] = true,
+        ["Rare Egg"] = false,
+        ["Mythical Egg"] = true,
+        ["Legendary Egg"] = false,
+        ["Bug Egg"] = true
+    },
+    ["ItemBlood"] = {
+        ["Blood Banana"] = false,
+        ["Blood Owl"] = false,
+        ["Night Seed Pack"] = true,
+        ["Moon Melon"] = false,
+        ["Mysterious Crate"] = false,
+        ["Blood Kiwi"] = false,
+        ["Night Egg"] = true,
+        ["Star Caller"] = false,
+        ["Blood Hedgehog"] = false
+    },
+    ["Item Twilight"] = {
+        ["Moon Mango"] = false,
+        ["Celestiberry"] = false,
+        ["Twilight Crate"] = false,
+        ["Night Seed Pack"] = true,
+        ["Night Egg"] = true,
+        ["Moon Cat"] = false,
+        ["Star Caller"] = false
+    },
+    ["Sprinkler"] = {
+        ["Basic Sprinkler"] = true,
+        ["Advanced Sprinkler"] = true,
+        ["Master Sprinkler"] = true,
+        ["Godly Sprinkler"] = true
+    },
+    ["Plant Candy"] = false,
+    ["PetNeedSend"] = {"Dragonfly", "Night Owl", "Raccoon", "Red Fox"},
+    ["Destroy Mode"] = {
+        ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
+        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Tomato", "Orange Tulip"}
+    },
+    ["Url"] = "https://discord.com/api/webhooks/1299279860832927765/lutLqsNrLm8YREMDOMdQabPYUoWOQGZn_yJooDgkH0A32adMd0SxwRlChZN4bXu1AmSU", -- Webhook 
+    ["Boost FPS"] = false,
+    ["Black Screen"] = false,
+    ["Note"] = "GAE ASS",
+    ["Pet Mode"] = {
+        ["Sell Pet"] = true,
+        ["Equip Pet"] = true,
+        ["Name Pet Equip"] = {
+            ["Night Owl"] = true,
+            ["Raccoon"] = true,
+            ["Red Fox"] = true,
+            ["Echo Frog"] = true,
+            ["Red Giant Ant"] = true,
+            ["Praying Mantis"] = true
+        },
+        ["Rarity"] = { -- Rarity Sell Pet
+            ["Common"] = true,
+            ["Uncommon"] = true,
+            ["Rare"] = true,
+            ["Legendary"] = false,
+            ["Divine"] = false,
+            ["Mythical"] = false
+        }
+    }
+}
+setfpscap(getgenv().Config["FPS"] or 3)
 repeat
     wait()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1d92451f927cd5998d2fba7dab59f46f.lua"))()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
     task.wait(10)
 until getgenv().Loaded
